@@ -1,0 +1,325 @@
+@mixin ipad {
+    @media (max-width:768px) {
+        @content
+    }
+}
+
+@mixin iphone {
+    @media (max-width:568px) {
+        @content
+    }
+}
+
+.imageContainer {
+    width: 100vw;
+    position: relative;
+
+    a {
+        position: absolute;
+        background: black;
+        opacity: 0.5;
+        opacity: 0;
+
+        &.top2href1 {
+            width: 11vw;
+            height: 11vw;
+            top: 12%;
+            left: 5.5%;
+            border-radius: 50%;
+        }
+
+        &.top2href2 {
+            width: 11vw;
+            height: 11vw;
+            top: 46%;
+            left: 15.5%;
+            border-radius: 50%;
+        }
+
+        &.top2href3 {
+            width: 11vw;
+            height: 11vw;
+            top: 5%;
+            left: 24.8%;
+            border-radius: 50%;
+        }
+
+        &.top2href4 {
+            width: 11vw;
+            height: 11vw;
+            top: 39%;
+            left: 32.5%;
+            border-radius: 50%;
+        }
+
+        &.top2href5 {
+            width: 11vw;
+            height: 11vw;
+            top: 5%;
+            left: 42.7%;
+            border-radius: 50%;
+        }
+
+        &.top2href6 {
+            width: 11vw;
+            height: 11vw;
+            top: 46.5%;
+            left: 48.2%;
+            border-radius: 50%;
+        }
+
+        &.top2href7 {
+            width: 11vw;
+            height: 11vw;
+            top: 15.1%;
+            left: 57.7%;
+            border-radius: 50%;
+        }
+
+        &.top2href8 {
+            width: 11vw;
+            height: 11vw;
+            top: 55%;
+            left: 66.5%;
+            border-radius: 50%;
+        }
+
+        &.top2href9 {
+            width: 11vw;
+            height: 11vw;
+            top: 11%;
+            left: 73%;
+            border-radius: 50%;
+        }
+
+        &.href1 {
+            width: 27vw;
+            height: 4vw;
+            top: 85%;
+            left: 35%;
+        }
+
+        &.href2 {
+            width: 20vw;
+            height: 4.4vw;
+            top: 13.8%;
+            left: 40%;
+        }
+
+        &.href3 {
+            width: 20.2vw;
+            height: 4.4vw;
+            top: 6.15%;
+            left: 40%;
+        }
+
+        &.href4 {
+            width: 32.6vw;
+            height: 7vw;
+            top: 47.85%;
+            left: 34%;
+        }
+
+        &.href5 {
+            width: 32.6vw;
+            height: 7vw;
+            top: 56.3%;
+            left: 34%;
+        }
+
+        &.href6 {
+            width: 32.7vw;
+            height: 7vw;
+            top: 78.56%;
+            left: 29.8%;
+        }
+
+        &.href7 {
+            width: 32.7vw;
+            height: 7vw;
+            top: 78.56%;
+            left: 65%;
+        }
+    }
+
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+    .snowBox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        // opacity: .5;
+        pointer-events: none;
+        animation: 12s snow_moving linear forwards infinite;
+        transform: translateY(-100%);
+        &:nth-child(2){
+            animation-delay: 6s;
+        }
+        @keyframes snow_moving {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+
+            }
+
+        }
+
+
+        .snowflake {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, .7);
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            animation: 5s flake_moving linear forwards infinite;
+
+            &:nth-of-type(2n) {
+                animation-delay: 2.5s;
+            }
+
+            &.big {
+                width: 10px;
+                height: 10px;
+            }
+
+            @keyframes flake_moving {
+                0% {
+                    transform: translateX(0%);
+                }
+
+                50% {
+                    transform: translateX(-500%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                }
+
+            }
+        }
+    }
+
+    .prev {
+        position: fixed;
+        z-index: 5;
+        right: 38px;
+        top: 20px;
+        padding: 6px 12px;
+        background: linear-gradient(180deg, #a43546 0%, #780716 100%);
+        border: none;
+        border-radius: 16px;
+        color: white;
+
+
+
+    }
+
+    .fixed {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: 0%;
+        top: 50%;
+        transform: translate(0%, -50%);
+        transition: 1s;
+        align-items: center;
+        z-index: 5;
+
+        &.fixedActive {
+            right: -20%;
+        }
+
+        .fixedItem {
+            width: 100px;
+            letter-spacing: -1px;
+            height: 48px;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: .5s;
+            color: white;
+
+            @include ipad {
+                width: 60px;
+            }
+
+            @include iphone {
+                width: 50px;
+            }
+
+            &.active,
+            &:hover {
+                background: black;
+            }
+
+            &:not(:last-child) {
+                margin-top: 1px;
+            }
+
+            &:last-child {
+                height: 60px;
+                border-radius: 0px 0px 60px 60px;
+
+                @include ipad {
+                    height: 40px;
+                }
+            }
+        }
+
+        .top {
+            width: 150px;
+            height: 120px;
+            cursor: pointer;
+
+            @include ipad {
+                width: 60px;
+                height: 48px;
+            }
+
+            @include iphone {
+                width: 50px;
+                height: 40px;
+            }
+        }
+
+    }
+
+    .fixed2 {
+        cursor: pointer;
+        position: fixed;
+        right: 0%;
+        top: 40%;
+        transform: translate(0%, -50%);
+        width: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px 0px 0px 10px;
+        text-align: center;
+        padding: 4px;
+        color: white;
+        transition: 1s;
+        z-index: 5;
+
+
+        &.fixedActive {
+            right: -20%;
+        }
+    }
+
+}
