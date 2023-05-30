@@ -1,0 +1,24 @@
+.toTop {
+    font-size: clamp(12px, 2vw, 16px);
+    position: fixed;
+ 
+    background: #0000005c;
+    border-radius: 50%;
+    right: 5px;
+    bottom: 5px;
+    z-index: 30;
+    cursor: pointer;
+    @media only screen and (max-width: 576px) {
+        padding: 9px 6px;
+    }
+    @media only screen and (min-width: 576px) {
+        padding: 15px 10px;
+    }
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}

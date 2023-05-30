@@ -369,6 +369,86 @@
 .container {
     width: 100%;
     overflow: hidden;
+
+    .prev {
+        position: fixed;
+        align-items: center;
+        z-index: 50;
+        right: 10px;
+        top: 10px;
+        padding: 0.3% 1%;
+        background: #3aa298;
+        border: none;
+        border-radius: 16px;
+        color: white;
+        box-shadow: #105249 1px 4px;
+        font-size: clamp(12px, 1vw, 2vw);
+    }
+
+    //下雪
+    // .snowBox {
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     z-index: 10;
+    //     // opacity: .5;
+    //     pointer-events: none;
+    //     animation: 12s snow_moving linear forwards infinite;
+    //     transform: translateY(-100%);
+    //     &:nth-child(2){
+    //         animation-delay: 6s;
+    //     }
+    //     @keyframes snow_moving {
+    //         0% {
+    //             transform: translateY(-100%);
+    //         }
+
+    //         100% {
+    //             transform: translateY(100%);
+
+    //         }
+
+    //     }
+
+    //     .snowflake {
+    //         position: absolute;
+    //         width: 8px;
+    //         height: 15px;
+    //         background: rgba(222, 255, 201, 0.7);
+    //         border-radius: 30% 10% 30% 10%;
+    //         top: 0;
+    //         left: 0;
+    //         animation: 5s flake_moving linear forwards infinite;
+
+    //         &:nth-of-type(2n) {
+    //             animation-delay: 2.5s;
+    //         }
+
+    //         &.big {
+    //             width: 10px;
+    //             height: 10px;
+    //         }
+
+    //         @keyframes flake_moving {
+    //             0% {
+    //                 transform: translateX(0%);
+    //             }
+
+    //             50% {
+    //                 transform: translateX(-500%);
+    //             }
+
+    //             100% {
+    //                 transform: translateX(0%);
+    //             }
+
+    //         }
+    //     }
+    // }
     .fixed {
         position: fixed;
         display: flex;
@@ -431,6 +511,7 @@
                 border-radius: 60px 60px 0px 0px;
                 text-align: center;
                 font-size: clamp(16px, 1.5vw, 2vw);
+                padding-bottom: 5%;
                 @include ipad {
                     height: 40px;
                 }
@@ -511,7 +592,7 @@
             @include scrollbar;
             @media only screen and (max-width: 576px) {
                 .popup-imgApp {
-                    background-image: url('../../public/img/SunnyPoint/點數活動頁4-2-1-20.jpg');
+                    // background-image: url('../../public/img/SunnyPoint/點數活動頁4-2-1-20.jpg');
                     background-position: center;
                     background-size: 100% 60%;
                     width: 100%;
@@ -527,7 +608,7 @@
             }
             @media only screen and (min-width: 576px) {
                 .popup-imgWeb {
-                    background-image: url('../../public/img/SunnyPoint/點數活動頁4-2-1-21.jpg');
+                    // background-image: url('../../public/img/SunnyPoint/點數活動頁4-2-1-21.jpg');
                     background-position: center;
                     background-size: 45% 100%;
                     width: 100%;
