@@ -38,7 +38,7 @@ html {
     .linkTO {
         position: absolute;
         background: rgba(236, 111, 111, 0.699);
-        // opacity: 0;
+        opacity: 0;
         cursor: pointer;
 
         &:nth-of-type(1) {
@@ -88,7 +88,7 @@ html {
     .twoA{
         position: absolute;
         background: rgba(229, 108, 108, 0.653);
-        // opacity: 0;
+        opacity: 0;
         cursor: pointer;
 
         &:nth-of-type(1) {
@@ -104,7 +104,7 @@ html {
     a {
         position: absolute;
         background: rgba(0, 0, 0, 0.666);
-        // opacity: 0;
+        opacity: 0;
         cursor: pointer;
 
         &:nth-of-type(1) {
@@ -151,7 +151,7 @@ html {
     a {
         position: absolute;
         background: rgba(0, 0, 0, 0.655);
-        // opacity: 0;
+        opacity: 0;
         cursor: pointer;
 
         &:nth-of-type(1) {
@@ -171,6 +171,29 @@ html {
             height: 7.2%;
             top: 31.4%;
             left: 50.9%;
+        }
+    }
+}
+
+.seven {
+    a {
+        position: absolute;
+        background: rgba(233, 125, 125, 0.655);
+        opacity: 0;
+        cursor: pointer;
+
+        &:nth-of-type(1) {
+            width: 13.8%;
+            height: 6.6%;
+            top: 12.7%;
+            left: 9%;
+        }
+        &:nth-of-type(2) {
+            width: 50.3%;
+            height: 3.5%;
+            bottom: 14.4%;
+            left: 24.1%;
+            border-radius: 50px;
         }
     }
 }
