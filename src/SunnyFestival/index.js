@@ -25,6 +25,7 @@ function SunnyPoint() {
     const five = 'img/2023.6月卡友獨享-1-05.jpg';
     const six = 'img/2023.6月卡友獨享-1-06.png';
     const seven = 'img/2023.6月卡友獨享-1-07.jpg';
+    const backImg = 'img/2023.6月卡友獨享-1-14.png';
 
     function createArray(length) {
         let arr = [];
@@ -74,28 +75,33 @@ function SunnyPoint() {
                     <br />
                     歡樂GO
                 </div>
-                <Link href="#one" to="one" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    賞利點 <br />
-                    介紹
-                </Link>
                 <Link href="#two" to="two" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    賞利點 <br />
-                    集點
+                    六大品牌 <br />
+                    六倍送
                 </Link>
                 <Link href="#three" to="three" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    賞利點 <br />
-                    兌換
+                    特賣 <br />
+                    搶鮮購
                 </Link>
                 <Link href="#four" to="four" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    下載APP
+                    新會員 <br />
+                    滿額送
                 </Link>
                 <Link href="#five" to="five" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    點數規則
+                    刷對<br />
+                    卡夏趴
                 </Link>
-                {/* <a href="#top" className="fixedItem">
-                    <div> ▲TOP</div>
-                </a> */}
+                <Link href="#six" to="six" spy={true} className="fixedItem" activeClass="fixedItem active">
+                   賺點密技
+                </Link>
+                <Link href="#seven" to="seven" spy={true} className="fixedItem" activeClass="fixedItem active">
+                    優惠加倍<br />
+                    回饋
+                </Link>
+                
             </div>
+
+ 
 
             <div id="one" name="one" className="imageContainer one">
                 <LazyLoadImage src={one} alt="/" />
@@ -108,15 +114,21 @@ function SunnyPoint() {
                     {' '}
                 </a>
             </div>
-            <Swiper />
+
             <div id="two" name="two" className="imageContainer two">
                 <LazyLoadImage src={two} alt="" />
                 <a href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="立即購買">
                     {' '}
                 </a>
+                <div className="swiperBackImg">
+                    <LazyLoadImage src={backImg} alt="" className="test" />
+                    <div className="swiperImg">
+                        <Swiper />
+                    </div>
+                </div>
             </div>
 
-            <div id="three" name="three" className="imageContainer mt three">
+            <div id="three" name="three" className="imageContainer three">
                 <LazyLoadImage src={three} alt="" />
                 {/* <a href="https://www.sunnygo.com.tw/web-front/home" alt="/">
                     {' '}

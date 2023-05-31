@@ -1,4 +1,4 @@
-import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,19 +13,18 @@ const SlideContainer = () => {
     const four = 'img/2023.6月卡友獨享-1-11.png';
     const five = 'img/2023.6月卡友獨享-1-12.png';
     const six = 'img/2023.6月卡友獨享-1-13.png';
- 
+
     const arr = [
-        { img: one, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=240607'},
-        {img: two, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=240605'},
+        { img: one, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=240607' },
+        { img: two, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=240605' },
         { img: three, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232071' },
         { img: four, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232077' },
         { img: five, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232078' },
         { img: six, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232074' },
-     
     ];
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={20}
             slidesPerView={1}
             slidesPerGroup={1}
@@ -34,6 +33,10 @@ const SlideContainer = () => {
             loop={true}
             className="swiper-bar"
             style={{ width: '90%' }}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
         >
             {arr.map((item, index) => {
                 const { img, a } = item;
@@ -41,7 +44,6 @@ const SlideContainer = () => {
                     <div key={index}>
                         <SwiperSlide key={index}>
                             <img src={img} alt="" className="swiperImg" />
-                            <a href={a}>{''}</a>
                         </SwiperSlide>
                     </div>
                 );
