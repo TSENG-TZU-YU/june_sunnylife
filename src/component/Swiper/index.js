@@ -15,12 +15,12 @@ const SlideContainer = () => {
     const six = 'img/2023.6月卡友獨享-1-13.png';
 
     const arr = [
-        { img: one, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=240607' },
-        { img: two, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=240605' },
-        { img: three, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232071' },
-        { img: four, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232077' },
-        { img: five, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232078' },
-        { img: six, a: 'https://www.sunnygo.com.tw/web-front/productDetails?id=232074' },
+        { img: one, a: 'https://www.sunnygo.com.tw/web-front/store/veybkdwr' },
+        { img: two, a: 'https://www.sunnygo.com.tw/web-front/store/kexbougl' },
+        { img: three, a: 'https://www.sunnygo.com.tw/web-front/store/liontravel' },
+        { img: four, a: 'https://www.sunnygo.com.tw/web-front/store/hyjkfstc' },
+        { img: five, a: 'https://www.sunnygo.com.tw/web-front/store/ink' },
+        { img: six, a: 'https://www.sunnygo.com.tw/web-front/store/168' },
     ];
     return (
         <Swiper
@@ -43,7 +43,9 @@ const SlideContainer = () => {
                 return (
                     <div key={index}>
                         <SwiperSlide key={index}>
-                            <img src={img} alt="" className="swiperImg" />
+                            <a href={a} target="_blank" rel="noreferrer">
+                                <img src={img} alt="" className="swiperImg" />
+                            </a>
                         </SwiperSlide>
                     </div>
                 );

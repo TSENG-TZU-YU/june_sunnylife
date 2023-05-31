@@ -85,7 +85,7 @@ html {
     }
 }
 .two {
-    a {
+    .twoA{
         position: absolute;
         background: rgba(229, 108, 108, 0.653);
         // opacity: 0;
@@ -348,12 +348,7 @@ html {
         width: 77%;
         top: 16%;
         border-radius: 60px;
-        // background: black;
-        // opacity: 0.5;
-        // .test{
-        //     opacity: 0.5;
-        
-        // }
+
         .swiperImg {
             position: absolute;
             width: 100%;
@@ -361,7 +356,6 @@ html {
             display: flex;
             justify-content: center;
         }
-      
     }
 }
 
@@ -486,7 +480,7 @@ html {
             justify-content: center;
             cursor: pointer;
             color: white;
-            font-weight:900;
+            font-weight: 900;
 
             @include ipad {
                 width: 60px;
@@ -510,7 +504,7 @@ html {
                 height: 50px;
                 border-radius: 60px 60px 0px 0px;
                 text-align: center;
-                font-size: clamp(16px, 1.5vw, 2vw);
+                font-size: clamp(14px, 1.5vw, 2vw);
                 padding-bottom: 5%;
                 @include ipad {
                     height: 40px;

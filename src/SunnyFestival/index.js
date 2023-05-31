@@ -117,7 +117,7 @@ function SunnyPoint() {
 
             <div id="two" name="two" className="imageContainer two">
                 <LazyLoadImage src={two} alt="" />
-                <a href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="立即購買">
+                <a className='twoA' href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="立即購買">
                     {' '}
                 </a>
                 <div className="swiperBackImg">
