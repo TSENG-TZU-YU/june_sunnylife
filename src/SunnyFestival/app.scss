@@ -175,6 +175,29 @@ html {
     }
 }
 
+.seven {
+    a {
+        position: absolute;
+        background: rgba(233, 125, 125, 0.655);
+        // opacity: 0;
+        cursor: pointer;
+
+        &:nth-of-type(1) {
+            width: 13.8%;
+            height: 6.6%;
+            top: 12.7%;
+            left: 9%;
+        }
+        &:nth-of-type(2) {
+            width: 50.3%;
+            height: 3.5%;
+            bottom: 14.4%;
+            left: 24.1%;
+            border-radius: 50px;
+        }
+    }
+}
+
 .imageContainer {
     width: 100%;
     position: relative;
