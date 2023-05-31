@@ -18,10 +18,10 @@ function SunnyPoint() {
 
     const [sixImg, setSixImg] = useState(false);
 
-    const one = 'img/2023.6月卡友獨享-1-01.png';
-    const two = 'img/2023.6月卡友獨享-1-02.png';
+    const one = 'img/2023.6月卡友獨享-1-01.jpg';
+    const two = 'img/2023.6月卡友獨享-1-02.jpg';
     const three = 'img/2023.6月卡友獨享-1-03.png';
-    const four = 'img/2023.6月卡友獨享-1-04.png';
+    const four = 'img/2023.6月卡友獨享-1-04.jpg';
     const five = 'img/2023.6月卡友獨享-1-05.jpg';
     const six = 'img/2023.6月卡友獨享-1-06.png';
     const seven = 'img/2023.6月卡友獨享-1-07.jpg';
@@ -98,33 +98,22 @@ function SunnyPoint() {
             </div>
 
             <div id="one" name="one" className="imageContainer one">
-                <LazyLoadImage src={one} alt="" />
-                {/* <nav>
-                    <LazyLoadImage src={one_app} alt="" />
-                </nav>
-                <nav>
-                    <LazyLoadImage src={one_circle1} alt="" />
-                </nav>
-                <nav>
-                    <LazyLoadImage src={one_circle2} alt="" />
-                </nav>
-                <nav>
-                    <LazyLoadImage src={one_circle3} alt="" />
-                </nav>
-                <Link href="#two" to="two" spy={true} alt="/">
+                <LazyLoadImage src={one} alt="/" />
+                <Link href="#two" to="two" spy={true} alt="/" className="linkTO"></Link>
+                <Link href="#three" to="three" spy={true} alt="/" className="linkTO"></Link>
+                <Link href="#four" to="four" spy={true} alt="/" className="linkTO"></Link>
+                <Link href="#six" to="six" spy={true} alt="/" className="linkTO"></Link>
+                <Link href="#five" to="five" spy={true} alt="/" className="linkTO"></Link>
+                <a href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="現在就買" className="linkTO">
                     {' '}
-                </Link>
-                <Link href="#three" to="three" spy={true} alt="/">
-                    {' '}
-                </Link> */}
+                </a>
             </div>
             <Swiper />
             <div id="two" name="two" className="imageContainer two">
                 <LazyLoadImage src={two} alt="" />
-
-                {/* <a href="https://www.sunnygo.com.tw/web-front/registerPage/fillPhone" alt="送100">
+                <a href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="立即購買">
                     {' '}
-                </a> */}
+                </a>
             </div>
 
             <div id="three" name="three" className="imageContainer mt three">
@@ -140,24 +129,48 @@ function SunnyPoint() {
                     {' '}
                 </a>
             </div>
-            <div id="four" name="four" className="imageContainer ">
+            <div id="five" name="five" className="imageContainer five">
                 <LazyLoadImage src={five} alt="" />
 
-                <a href="https://reurl.cc/1ezLzp" alt="/">
+                <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
+                    {' '}
+                </a>
+                <a href="https://service.sunnybank.com.tw/portal/pt/pt01002/PT01002Index.xhtml" alt="/">
+                    {' '}
+                </a>
+                <a href="https://service.sunnybank.com.tw/portal/pt/pt01002/PT01002Index.xhtml" alt="/">
+                    {' '}
+                </a>
+                <a href="https://service.sunnybank.com.tw/portal/pt/pt01002/PT01002Index.xhtml" alt="/">
+                    {' '}
+                </a>
+                <a href="https://service.sunnybank.com.tw/portal/pt/pt01002/PT01002Index.xhtml" alt="/">
+                    {' '}
+                </a>
+                <a href="https://service.sunnybank.com.tw/portal/pt/pt01002/PT01002Index.xhtml" alt="/">
                     {' '}
                 </a>
             </div>
-            <div id="four" name="four" className="imageContainer ">
+            <div id="six" name="six" className="imageContainer six">
                 <LazyLoadImage src={six} alt="" />
-
-                <a href="https://reurl.cc/1ezLzp" alt="/">
+                
+                <a href="https://www.sunnygo.com.tw/web-front/registerPage/fillPhone" alt="/">
+                    {' '}
+                </a>
+                <a href="https://apps.apple.com/app/id1542874456" alt="/">
+                    {' '}
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=tw.com.sunnygo.mobile" alt="/">
                     {' '}
                 </a>
             </div>
-            <div id="four" name="four" className="imageContainer ">
+            <div id="seven" name="seven" className="imageContainer seven">
                 <LazyLoadImage src={seven} alt="" />
 
-                <a href="https://reurl.cc/1ezLzp" alt="/">
+                <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
+                    {' '}
+                </a>
+                <a href="https://www.sunnygo.com.tw/static_custom/sunny_point/SunnyPoint.html?id=undefined&sonId=197" alt="/">
                     {' '}
                 </a>
             </div>
