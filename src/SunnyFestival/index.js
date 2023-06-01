@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { React, useRef, useEffect, useState } from 'react';
 import './app.scss';
 
 import { Link, animateScroll } from 'react-scroll';
@@ -16,7 +16,8 @@ function SunnyPoint() {
     const [show, setShow] = useState(true);
     const handleShow = (type) => () => setShow(type === 'show');
 
-    const [sixImg, setSixImg] = useState(false);
+    const scrollRef2 = useRef();
+    const [isLoading, setIsLoading] = useState(false);
 
     const one = 'img/2023.6月卡友獨享-1-01.jpg';
     const two = 'img/2023.6月卡友獨享-1-02.jpg';
@@ -43,6 +44,18 @@ function SunnyPoint() {
         }
         return arr;
     }
+
+    // 設定錨點
+    useEffect(() => {
+        scrollRef2.current.scrollIntoView();
+    }, [isLoading]);
+    useEffect(() => {
+        setIsLoading(true);
+
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 100);
+    }, []);
 
     return (
         <div id="container" className="container">
@@ -139,7 +152,7 @@ function SunnyPoint() {
                     {' '}
                 </a>
             </div>
-            <div id="five" name="five" className="imageContainer five">
+            <div  id="five" name="five" className="imageContainer five">
                 <LazyLoadImage src={five} alt="" />
 
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
@@ -161,7 +174,7 @@ function SunnyPoint() {
                     {' '}
                 </a>
             </div>
-            <div id="six" name="six" className="imageContainer six">
+            <div ref={scrollRef2} id="six" name="six" className="imageContainer six">
                 <LazyLoadImage src={six} alt="" />
 
                 <a href="https://www.sunnygo.com.tw/web-front/registerPage/fillPhone" alt="/">
@@ -191,32 +204,6 @@ function SunnyPoint() {
             <div onClick={handleShow('show')} className={show ? 'fixed2 fixedActive ' : 'fixed2 '}>
                 <AiOutlineLeft /> 快速導覽
             </div>
-
-            {/* pop */}
-            {sixImg ? (
-                <div className="popup">
-                    <div className="popup-inner">
-                        <div className="popup-imgApp">
-                            <IoCloseCircle
-                                className="iconApp"
-                                onClick={() => {
-                                    setSixImg(false);
-                                }}
-                            />
-                        </div>
-                        <div className="popup-imgWeb">
-                            <IoCloseCircle
-                                className="iconWeb"
-                                onClick={() => {
-                                    setSixImg(false);
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-            ) : (
-                ''
-            )}
         </div>
     );
 }
