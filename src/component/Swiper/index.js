@@ -20,7 +20,7 @@ const SlideContainer = () => {
         { img: three, a: 'https://www.sunnygo.com.tw/web-front/store/liontravel' },
         { img: four, a: 'https://www.sunnygo.com.tw/web-front/store/hyjkfstc' },
         { img: five, a: 'https://www.sunnygo.com.tw/web-front/store/ink' },
-        { img: six, a: 'https://www.sunnygo.com.tw/web-front/store/168' },
+        { img: six, a: 'https://www.sunnygo.com.tw/web-front/allLibraris?keyword=%E6%97%A5%E7%AB%8B' },
     ];
     return (
         <Swiper

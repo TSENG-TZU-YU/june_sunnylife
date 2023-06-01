@@ -76,31 +76,30 @@ function SunnyPoint() {
                     歡樂GO
                 </div>
                 <Link href="#two" to="two" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    六大品牌 <br />
+                    品牌 <br />
                     六倍送
                 </Link>
                 <Link href="#three" to="three" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    特賣 <br />
-                    搶鮮購
+                    粽夏
+                    <br />
+                    搶鮮抽
                 </Link>
                 <Link href="#four" to="four" spy={true} className="fixedItem" activeClass="fixedItem active">
                     新會員 <br />
-                    滿額送
+                    送好禮
                 </Link>
                 <Link href="#five" to="five" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    刷對<br />
+                    刷對
+                    <br />
                     卡夏趴
                 </Link>
                 <Link href="#six" to="six" spy={true} className="fixedItem" activeClass="fixedItem active">
-                   賺點密技
+                    賺點密技
                 </Link>
                 <Link href="#seven" to="seven" spy={true} className="fixedItem" activeClass="fixedItem active">
-                    優惠加倍<br />
-                    回饋
+                    立即辦卡
                 </Link>
             </div>
-
- 
 
             <div id="one" name="one" className="imageContainer one">
                 <LazyLoadImage src={one} alt="/" />
@@ -116,7 +115,7 @@ function SunnyPoint() {
 
             <div id="two" name="two" className="imageContainer two">
                 <LazyLoadImage src={two} alt="" />
-                <a className='twoA' href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="立即購買">
+                <a className="twoA" href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="立即購買">
                     {' '}
                 </a>
                 <div className="swiperBackImg">
@@ -164,7 +163,7 @@ function SunnyPoint() {
             </div>
             <div id="six" name="six" className="imageContainer six">
                 <LazyLoadImage src={six} alt="" />
-                
+
                 <a href="https://www.sunnygo.com.tw/web-front/registerPage/fillPhone" alt="/">
                     {' '}
                 </a>
@@ -181,7 +180,10 @@ function SunnyPoint() {
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
                     {' '}
                 </a>
-                <a href="https://www.sunnygo.com.tw/static_custom/sunny_point/SunnyPoint.html?id=undefined&sonId=197" alt="/">
+                <a
+                    href="https://www.sunnygo.com.tw/static_custom/sunny_point/SunnyPoint.html?id=undefined&sonId=197"
+                    alt="/"
+                >
                     {' '}
                 </a>
             </div>
