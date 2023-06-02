@@ -50,7 +50,9 @@ function SunnyPoint() {
 
     // 設定錨點
     useEffect(() => {
-        scrollRef2.current.scrollIntoView();
+        setTimeout(() => {
+            scrollRef2.current.scrollIntoView();
+        }, 500);
     }, [imgLoading]);
     // useEffect(() => {
 
@@ -193,7 +195,7 @@ function SunnyPoint() {
             </div>
             <div id="five" name="five" className="imageContainer five">
                 <div ref={scrollRef2} className="test"></div>
-                <LazyLoadImage src={five} alt="" />
+                <LazyLoadImage src={five} alt="" onLoad={handleImageLoaded} />
 
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
                     {' '}
@@ -228,7 +230,7 @@ function SunnyPoint() {
                 </a>
             </div>
             <div id="seven" name="seven" className="imageContainer seven">
-                <LazyLoadImage src={seven} alt="" onLoad={handleImageLoaded} />
+                <LazyLoadImage src={seven} alt="" />
 
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
                     {' '}
