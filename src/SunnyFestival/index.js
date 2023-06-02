@@ -15,7 +15,6 @@ function SunnyPoint() {
     const handleShow = (type) => () => setShow(type === 'show');
 
     const scrollRef2 = useRef();
-    const [isLoading, setIsLoading] = useState(false);
     const [imgLoading, setImgLoading] = useState(false);
 
     const one = 'img/2023.6月卡友獨享-1-01.jpg';
@@ -54,14 +53,6 @@ function SunnyPoint() {
             scrollRef2.current.scrollIntoView();
         }, 500);
     }, [imgLoading]);
-    // useEffect(() => {
-
-    //         setIsLoading(true);
-
-    //         setTimeout(() => {
-    //             setIsLoading(false);
-    //         }, 300);
-    // }, [imgLoading]);
 
     return (
         <div id="container" className="container">
