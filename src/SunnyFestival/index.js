@@ -152,7 +152,7 @@ function SunnyPoint() {
                     {' '}
                 </a>
             </div>
-            <div  id="five" name="five" className="imageContainer five">
+            <div ref={scrollRef2} id="five" name="five" className="imageContainer five">
                 <LazyLoadImage src={five} alt="" />
 
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
@@ -174,7 +174,7 @@ function SunnyPoint() {
                     {' '}
                 </a>
             </div>
-            <div ref={scrollRef2} id="six" name="six" className="imageContainer six">
+            <div id="six" name="six" className="imageContainer six">
                 <LazyLoadImage src={six} alt="" />
 
                 <a href="https://www.sunnygo.com.tw/web-front/registerPage/fillPhone" alt="/">
