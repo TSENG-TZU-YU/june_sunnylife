@@ -84,9 +84,9 @@ function SunnyPoint() {
             <div className={show ? 'fixed' : 'fixed fixedActive'}>
                 <div onClick={handleShow('hide')} className="fixedItem">
                     {/* <LazyLoadImage className="top" src={topStar} alt="" /> */}
-                    粽夏
+                    Sunny
                     <br />
-                    歡樂GO
+                    Life
                 </div>
                 <Link href="#two" to="two" spy={true} className="fixedItem" activeClass="fixedItem active">
                     品牌 <br />
