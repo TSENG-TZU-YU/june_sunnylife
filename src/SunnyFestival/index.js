@@ -86,28 +86,28 @@ function SunnyPoint() {
                     <br />
                     Life
                 </div>
-                <Link href="#two" to="two" spy={true} className="fixedItem" activeClass="fixedItem active">
+                <Link href="#two" to="two" spy={true} smooth={true} className="fixedItem" activeClass="fixedItem active">
                     品牌 <br />
                     六倍送
                 </Link>
-                <Link href="#three" to="three" spy={true} className="fixedItem" activeClass="fixedItem active">
+                <Link href="#three" to="three" spy={true} smooth={true} className="fixedItem" activeClass="fixedItem active">
                     粽夏
                     <br />
                     搶鮮抽
                 </Link>
-                <Link href="#four" to="four" spy={true} className="fixedItem" activeClass="fixedItem active">
+                <Link href="#four" to="four" spy={true} smooth={true} className="fixedItem" activeClass="fixedItem active">
                     新會員 <br />
                     送好禮
                 </Link>
-                <Link href="#five" to="five" spy={true} className="fixedItem" activeClass="fixedItem active">
+                <Link href="#five" to="five" spy={true} smooth={true} className="fixedItem" activeClass="fixedItem active">
                     刷對
                     <br />
                     卡夏趴
                 </Link>
-                <Link href="#six" to="six" spy={true} className="fixedItem" activeClass="fixedItem active">
+                <Link href="#six" to="six" spy={true} smooth={true} className="fixedItem" activeClass="fixedItem active">
                     賺點密技
                 </Link>
-                <Link href="#seven" to="seven" spy={true} className="fixedItem" activeClass="fixedItem active">
+                <Link href="#seven" to="seven" spy={true} smooth={true} className="fixedItem" activeClass="fixedItem active">
                     立即辦卡
                 </Link>
             </div>

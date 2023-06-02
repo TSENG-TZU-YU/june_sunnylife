@@ -27,14 +27,15 @@
         display: none;
     }
 }
-html {
-    scroll-behavior: smooth;
-}
+// html {
+//     scroll-behavior: smooth;
+// }
 
 .mt {
     margin-top: 50px;
 }
 .one {
+    margin-top: 0.1%;
     .linkTO {
         position: absolute;
         background: rgba(236, 111, 111, 0.699);
@@ -99,9 +100,12 @@ html {
         }
     }
 }
+.four {
+    margin-top: 0.1%;
+}
 
 .five {
-    .test{
+    .test {
         position: absolute;
         width: 17.5%;
         height: 3.6%;
