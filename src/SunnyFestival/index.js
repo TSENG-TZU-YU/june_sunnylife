@@ -46,16 +46,16 @@ function SunnyPoint() {
     }
 
     // 設定錨點
-    // useEffect(() => {
-    //     scrollRef2.current.scrollIntoView();
-    // }, [isLoading]);
-    // useEffect(() => {
-    //     setIsLoading(true);
+    useEffect(() => {
+        scrollRef2.current.scrollIntoView();
+    }, [isLoading]);
+    useEffect(() => {
+        setIsLoading(true);
 
-    //     setTimeout(() => {
-    //         setIsLoading(false);
-    //     }, 100);
-    // }, []);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 100);
+    }, []);
 
     return (
         <div id="container" className="container">
@@ -152,7 +152,8 @@ function SunnyPoint() {
                     {' '}
                 </a>
             </div>
-            <div ref={scrollRef2} id="five" name="five" className="imageContainer five">
+            <div  id="five" name="five" className="imageContainer five">
+                <div ref={scrollRef2} className='test'></div>
                 <LazyLoadImage src={five} alt="" />
 
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
