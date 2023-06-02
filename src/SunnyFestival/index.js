@@ -16,6 +16,7 @@ function SunnyPoint() {
 
     const scrollRef2 = useRef();
     const [isLoading, setIsLoading] = useState(false);
+    const [imgLoading, setImgLoading] = useState(false);
 
     const one = 'img/2023.6月卡友獨享-1-01.jpg';
     const two = 'img/2023.6月卡友獨享-1-02.jpg';
@@ -43,19 +44,22 @@ function SunnyPoint() {
         return arr;
     }
 
+    function handleImageLoaded() {
+        setImgLoading(true);
+    }
+
     // 設定錨點
     useEffect(() => {
         scrollRef2.current.scrollIntoView();
-    }, [isLoading]);
-    useEffect(() => {
-        setIsLoading(true);
+    }, [imgLoading]);
+    // useEffect(() => {
 
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 300);
-    }, []);
+    //         setIsLoading(true);
 
-
+    //         setTimeout(() => {
+    //             setIsLoading(false);
+    //         }, 300);
+    // }, [imgLoading]);
 
     return (
         <div id="container" className="container">
@@ -224,7 +228,7 @@ function SunnyPoint() {
                 </a>
             </div>
             <div id="seven" name="seven" className="imageContainer seven">
-                <LazyLoadImage src={seven} alt="" />
+                <LazyLoadImage src={seven} alt="" onLoad={handleImageLoaded} />
 
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
                     {' '}
