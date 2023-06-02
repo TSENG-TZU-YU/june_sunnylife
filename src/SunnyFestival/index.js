@@ -1,13 +1,11 @@
 import { React, useRef, useEffect, useState } from 'react';
 import './app.scss';
 
-import { Link, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { AiOutlineLeft } from 'react-icons/ai';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-import { TiArrowSortedDown } from 'react-icons/ti';
 import { IoIosArrowForward } from 'react-icons/io';
-import { IoCloseCircle } from 'react-icons/io5';
 import Top from '../component/top/Top';
 import Swiper from '../component/Swiper';
 
@@ -141,19 +139,12 @@ function SunnyPoint() {
 
             <div id="three" name="three" className="imageContainer three">
                 <LazyLoadImage src={three} alt="" />
-                {/* <a href="https://www.sunnygo.com.tw/web-front/home" alt="/">
-                    {' '}
-                </a> */}
             </div>
             <div id="four" name="four" className="imageContainer four">
                 <LazyLoadImage src={four} alt="" />
-
-                <a href="https://reurl.cc/1ezLzp" alt="/">
-                    {' '}
-                </a>
             </div>
-            <div  id="five" name="five" className="imageContainer five">
-                <div ref={scrollRef2}  className='test'></div>
+            <div id="five" name="five" className="imageContainer five">
+                <div ref={scrollRef2} className="test"></div>
                 <LazyLoadImage src={five} alt="" />
 
                 <a href="https://ccas.sunnybank.com.tw/index?channel=SG" alt="/">
