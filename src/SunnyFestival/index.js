@@ -17,7 +17,8 @@ function SunnyPoint() {
     const scrollRef2 = useRef();
     const [imgLoading, setImgLoading] = useState(false);
 
-    const one = 'img/2023.6月卡友獨享-1-01.jpg';
+    const one = 'img/2023.6月卡友獨享-1-01.png';
+    const one1 = 'img/2023.6月卡友獨享-1-15.png';
     const two = 'img/2023.6月卡友獨享-1-02.jpg';
     const three = 'img/2023.6月卡友獨享-1-03.png';
     const four = 'img/2023.6月卡友獨享-1-04.jpg';
@@ -25,6 +26,7 @@ function SunnyPoint() {
     const six = 'img/2023.6月卡友獨享-1-06.png';
     const seven = 'img/2023.6月卡友獨享-1-07.png';
     const backImg = 'img/2023.6月卡友獨享-1-14.png';
+   
 
     function createArray(length) {
         let arr = [];
@@ -48,11 +50,11 @@ function SunnyPoint() {
     }
 
     // 設定錨點
-    useEffect(() => {
-        setTimeout(() => {
-            scrollRef2.current.scrollIntoView();
-        }, 500);
-    }, [imgLoading]);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         scrollRef2.current.scrollIntoView();
+    //     }, 500);
+    // }, [imgLoading]);
 
     return (
         <div id="container" className="container">
@@ -80,7 +82,6 @@ function SunnyPoint() {
             <Top />
             <div className={show ? 'fixed' : 'fixed fixedActive'}>
                 <div onClick={handleShow('hide')} className="fixedItem">
-                    {/* <LazyLoadImage className="top" src={topStar} alt="" /> */}
                     Sunny
                     <br />
                     Life
@@ -163,6 +164,10 @@ function SunnyPoint() {
                 <a href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="現在就買" className="linkTO">
                     {' '}
                 </a>
+            </div>
+
+            <div className="imageContainer">
+                <LazyLoadImage src={one1} alt="/" />
             </div>
 
             <div id="two" name="two" className="imageContainer two">

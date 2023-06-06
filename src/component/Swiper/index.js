@@ -4,10 +4,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './index.scss';
 
 const SlideContainer = () => {
-    const one = 'img/2023.6月卡友獨享-1-08.png';
+    const one = 'img/2023.6月卡友獨享-1-8.png';
     const two = 'img/2023.6月卡友獨享-1-09.png';
     const three = 'img/2023.6月卡友獨享-1-10.png';
     const four = 'img/2023.6月卡友獨享-1-11.png';
@@ -44,7 +45,7 @@ const SlideContainer = () => {
                     <div key={index}>
                         <SwiperSlide key={index}>
                             <a href={a} target="_blank" rel="noreferrer">
-                                <img src={img} alt="" className="swiperImg" />
+                                <LazyLoadImage src={img} alt="" className="swiperImg" />
                             </a>
                         </SwiperSlide>
                     </div>
