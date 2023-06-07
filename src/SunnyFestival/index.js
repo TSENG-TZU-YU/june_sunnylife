@@ -53,7 +53,7 @@ function SunnyPoint() {
     // useEffect(() => {
     //     setTimeout(() => {
     //         scrollRef2.current.scrollIntoView();
-    //     }, 500);
+    //     }, 100);
     // }, [imgLoading]);
 
     return (
@@ -156,11 +156,11 @@ function SunnyPoint() {
 
             <div id="one" name="one" className="imageContainer one">
                 <LazyLoadImage src={one} alt="/" />
-                <Link href="#two" to="two" spy={true} alt="/" className="linkTO"></Link>
-                <Link href="#three" to="three" spy={true} alt="/" className="linkTO"></Link>
-                <Link href="#four" to="four" spy={true} alt="/" className="linkTO"></Link>
-                <Link href="#six" to="six" spy={true} alt="/" className="linkTO"></Link>
-                <Link href="#five" to="five" spy={true} alt="/" className="linkTO"></Link>
+                <Link href="#two" to="two" spy={true} smooth={true} alt="/" className="linkTO"></Link>
+                <Link href="#three" to="three" spy={true} smooth={true} alt="/" className="linkTO"></Link>
+                <Link href="#four" to="four" spy={true} smooth={true} alt="/" className="linkTO"></Link>
+                <Link href="#six" to="six" spy={true} smooth={true} alt="/" className="linkTO"></Link>
+                <Link href="#five" to="five" spy={true} smooth={true} alt="/" className="linkTO"></Link>
                 <a href="https://www.sunnygo.com.tw/web-front/allTube?id=69" alt="現在就買" className="linkTO">
                     {' '}
                 </a>
