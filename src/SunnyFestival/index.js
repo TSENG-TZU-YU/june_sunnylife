@@ -20,7 +20,7 @@ function SunnyPoint() {
     const one = 'img/2023.6月卡友獨享-1-01.png';
     const one1 = 'img/2023.6月卡友獨享-1-15.png';
     const two = 'img/2023.6月卡友獨享-1-02.jpg';
-    const three = 'img/2023.6月卡友獨享-1-03.png';
+    const three = 'img/2023.6月卡友獨享-1-003.png';
     const four = 'img/2023.6月卡友獨享-1-04.jpg';
     const five = 'img/2023.6月卡友獨享-1-05.png';
     const six = 'img/2023.6月卡友獨享-1-06.png';
