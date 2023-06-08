@@ -11,7 +11,7 @@ const SlideContainer = () => {
     const one = 'img/2023.6月卡友獨享-1-8.png';
     const two = 'img/2023.6月卡友獨享-1-09.png';
     const three = 'img/2023.6月卡友獨享-1-10.png';
-    const four = 'img/2023.6月卡友獨享-1-11.png';
+    const four = 'img/2023.6月卡友獨享-1-011.png';
     const five = 'img/2023.6月卡友獨享-1-12.png';
     const six = 'img/2023.6月卡友獨享-1-13.png';
 

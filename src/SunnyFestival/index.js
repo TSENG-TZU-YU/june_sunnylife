@@ -50,11 +50,11 @@ function SunnyPoint() {
     }
 
     // 設定錨點
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         scrollRef2.current.scrollIntoView();
-    //     }, 100);
-    // }, [imgLoading]);
+    useEffect(() => {
+        setTimeout(() => {
+            scrollRef2.current.scrollIntoView();
+        }, 100);
+    }, [imgLoading]);
 
     return (
         <div id="container" className="container">
